@@ -1,0 +1,1 @@
+python convert_obj_three.py -i ShipModelV1.obj -o ShipModelV1.js -a center

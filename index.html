@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>GDC Online 2012 Game Demo</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/screen.css" />
+    
+    <!-- scripts -->
+    <script data-main="assets/scripts/main.js" src="assets/scripts/require-jquery.js"></script>
+    
+</head>
+<body>
+    <section id="container">
+        <!-- title screen -->
+        <section id="title" class="active">
+            <img src="assets/images/ui/title.jpg">
+            <img id="start-button" src="assets/images/ui/start-button.jpg">
+        </section>
+        
+        <!-- game screen -->
+        <section id="game">
+        
+            <div id="console">
+                <div id="settings">
+                    <img id="settings-text" src="assets/images/ui/settings-text.png">
+
+                    <ul>
+                        <li id="webcam">
+                            <a href="#" class="on"></a>
+                            <a href="#" class="off active"></a>
+                        </li>
+                        <li id="fullscreen">
+                            <a href="#" class="on"></a>
+                            <a href="#" class="off active"></a>
+                        </li>
+                        <li id="pointerlock">
+                            <a href="#" class="on"></a>
+                            <a href="#" class="off active"></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="score">
+                    <span id="score-value"></span>
+                </div>
+            </div>
+            
+            <div id="scene">
+                <div>
+                    <canvas id="two-canvas"></canvas>
+                </div>
+                <div id="three-container">
+                    <!-- canvas element to be inserted dynamically by three.js -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- assets -->
+        <section id="assets">
+            <video id="webcam-video"></video>
+            <canvas id="enemy-face-video"></canvas>
+        </section>
+        
+    </section>
+</body>
+</html>
