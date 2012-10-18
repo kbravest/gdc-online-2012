@@ -1,4 +1,4 @@
-This game demo was shown as part of the "Create solutions to the limitations of HTML5 as a game platform" presentation at the GDC Online 2012 Conference.
+This game demo was shown as part of the "Creative solutions to the limitations of HTML5 as a game platform" presentation at the GDC Online 2012 Conference.
 
 See it in action here: http://www.moot-point.com/demos/gdc-online-2012
 
@@ -24,4 +24,3 @@ Please see the following scripts for implementations of each feature:
     WebAudio API
         /lib/audio-manager.js
         /game.js::loadAudio()
-

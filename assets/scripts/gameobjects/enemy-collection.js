@@ -44,7 +44,7 @@ define([
 
         this.enemyGroup = new THREE.Object3D();
         this.velocity = new THREE.Vector3(0, 0, 10);
-        this.faceSetIndex = 0;
+        this.faceSetIndex = 1;
         this.explosionCollection = null;
         this.score = null;
         this.videoEnabled = false;
@@ -92,7 +92,7 @@ define([
     EnemyCollection.prototype.nextFaceSet = function() {
         this.faceSetIndex++;
         if (this.faceSetIndex >= this.faceSets.length) {
-            this.faceSetIndex = 0;
+            this.faceSetIndex = 1;
         }
     }
     
