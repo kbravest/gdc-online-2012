@@ -378,7 +378,7 @@ define([
 		this.bindEvents(); 
         
         //kick off game loop
-		this.prevTime = new Date().getTime();
+		this.prevTime = performance.now();
         this.step();
     },
 	
@@ -396,7 +396,7 @@ define([
     },
 
     // update game logic
-    Game.prototype.update = function(currentTime) {		
+    Game.prototype.update = function(currentTime) {	
 		if (currentTime == null) { 
 			currentTime = this.prevTime; 
 		}

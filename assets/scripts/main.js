@@ -8,7 +8,7 @@
  
 require.config({
     baseUrl: 'assets/scripts',
-    urlArgs: 'cb=' + (new Date()).getTime()
+   urlArgs: 'cb=' + (new Date()).getTime()
 });
 
 require([

@@ -50,6 +50,17 @@ if (Function.prototype.bind === null || Function.prototype.bind === undefined) {
     } (Array.prototype.slice));
 }
 
+// performance.now polyfill
+window.performance = window.performance || {};
+performance.now = (function() {
+  return performance.now       ||
+         performance.mozNow    ||
+         performance.msNow     ||
+         performance.oNow      ||
+         performance.webkitNow ||
+         function() { return new Date().getTime(); };
+})();
+
 /**
 *   requestAnimationFrame shim 
 *   from http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
